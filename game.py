@@ -15,6 +15,8 @@ class Game:
         print("Welcome to the Phrase Hunter - Movie Edition!")
         print("Try to guess the phrase before you run out of attempts.")
         print("You have 5 attempts to guess the phrase.")
+        print("You dont have to include punctuation (!, ? etc) in your guesses.")
+        print('But Capitals Are Required!')
 
         self.phrase.show_phrase(self.attempts)
 
