@@ -25,11 +25,3 @@ class Phrase():
 
     def check_for_win(self, chosenPhrase, attempts):
         return set(chosenPhrase) == set(attempts)
-
-
-#p1 = Phrase()
-#print(p1.chosenPhrase)
-#print(p1.lettersInChosenPhrase)
-#print(p1.check_Attempt('a'))
-#print(p1.show_phrase(['a', ' ']))
-#print(p1.check_for_win('Ill be back'))
