@@ -5,7 +5,15 @@ class Game:
 
     #init game using phrase object
     def __init__(self):
-        self.phrase = Phrase()
+        self.phraseList = ['Frankly, my dear, I dont give a damn',
+                           'Toto, Ive a feeling were not in Kansas anymore',
+                           'Im going to make him an offer he cant refuse',
+                           'Go ahead make my day',
+                           'May the Force be with you',
+                           'You talking to me?',
+                           'Ill be back',
+                           'You cant handle the truth', 'I want to play a game']
+        self.phrase = Phrase(self.phraseList)
         self.attempts = [' '] #needed so that spaces show in phrase
         self.game_continues = True
         self.turns = 5
@@ -15,7 +23,7 @@ class Game:
         print("Welcome to the Phrase Hunter - Movie Edition!")
         print("Try to guess the phrase before you run out of attempts.")
         print("You have 5 attempts to guess the phrase.")
-        print("You dont have to include punctuation (!, ? etc) in your guesses.")
+        print("Apart from commas, you dont have to include punctuation (!, ? etc) in your guesses.")
         print('But Capitals Are Required!')
 
         self.phrase.show_phrase(self.attempts)

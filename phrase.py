@@ -5,16 +5,10 @@ import random
 
 class Phrase():
     # create an init method that initialises a phrase object
-    def __init__(self):
-        self.phrases = ['Frankly, my dear, I dont give a damn',
-                        'Toto, Ive a feeling were not in Kansas anymore',
-                        'Im going to make him an offer he cant refuse',
-                        'Go ahead make my day', 
-                        'May the Force be with you', 
-                        'You talking to me?', 
-                        'Ill be back',
-                        'You cant handle the truth', 'I want to play a game']
-        self.chosenPhrase = self.phrases[random.randint(0, len(self.phrases)-1)]
+    def __init__(self, phraseList):
+        self.phrases = phraseList
+        self.chosenPhrase = self.phrases[random.randint(
+            0, len(self.phrases)-1)]
 
     def show_phrase(self, attempts):
         for letter in self.chosenPhrase:
